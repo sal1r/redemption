@@ -1,11 +1,4 @@
+res://Scenes/Cat.tscn
 res://Scenes/Game.tscn
 res://Scenes/Man.tscn
-res://Scenes/Cat.tscn
-res://Scripts/Game.gd
 res://Scripts/BasePlayer.gd
-res://Scripts/Cat.gd
-res://Scripts/Man.gd
-res://default_bus_layout.tres
-res://Props/AudioBusLayout.tres
-res://Scenes/Music.tscn
-res://Scenes/BasePlayer.tscn
