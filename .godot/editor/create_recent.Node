@@ -1,8 +1,11 @@
+Button
+VBoxContainer
+CenterContainer
+Control
 Sprite2D
 CollisionShape2D
 AudioStreamPlayer
 Label
-Control
 CanvasLayer
 Camera2D
 CharacterBody2D
