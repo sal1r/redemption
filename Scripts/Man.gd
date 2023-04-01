@@ -10,3 +10,7 @@ func _physics_process(delta):
 		move_and_slide()
 	else:
 		anim.play("idle")
+
+
+func _on_area_1_area_entered(area):
+	pass # Replace with function body.

@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=7 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
 [ext_resource type="PackedScene" uid="uid://cbwwkmwbtikhn" path="res://Scenes/Man.tscn" id="2_i0hag"]
 [ext_resource type="PackedScene" uid="uid://b0accu12cbn44" path="res://Scenes/Cat.tscn" id="3_mq3mr"]
+[ext_resource type="Texture2D" uid="uid://brfaf1yt6a6yj" path="res://Sprites/DialogPanel.png" id="4_eax30"]
+[ext_resource type="FontFile" uid="uid://eadgwi0q0nq3" path="res://Props/joystix monospace.otf" id="5_vg4dc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7v6cn"]
+font = ExtResource("5_vg4dc")
+font_size = 64
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kjom4")
@@ -19,7 +25,27 @@ drag_bottom_margin = 0.3
 editor_draw_drag_margin = true
 
 [node name="Man" parent="." instance=ExtResource("2_i0hag")]
-position = Vector2(-34, -3)
+position = Vector2(1, 2)
 
 [node name="Cat" parent="." instance=ExtResource("3_mq3mr")]
 position = Vector2(148, 27)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 327.0
+offset_top = 526.0
+offset_right = 487.0
+offset_bottom = 566.0
+scale = Vector2(4, 4)
+texture = ExtResource("4_eax30")
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect"]
+layout_mode = 0
+offset_left = 4.25
+offset_top = 8.0
+offset_right = 738.25
+offset_bottom = 88.0
+scale = Vector2(0.05, 0.05)
+text = "КАКОЙ-ТО ТЕКСТ"
+label_settings = SubResource("LabelSettings_7v6cn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0accu12cbn44"]
+[gd_scene load_steps=6 format=3 uid="uid://b0accu12cbn44"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ifwqn"]
 size = Vector2(51, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjbcb"]
+size = Vector2(52, 60)
 
 [node name="BasePlayer" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
@@ -20,3 +23,15 @@ sprite_frames = ExtResource("3_18uc0")
 animation = &"idle"
 frame = 1
 frame_progress = 0.10183
+
+[node name="area1" type="Area2D" parent="." index="2"]
+
+[node name="Collider" type="CollisionShape2D" parent="area1" index="0"]
+position = Vector2(7.5, 27)
+shape = SubResource("RectangleShape2D_ifwqn")
+
+[node name="area2" type="Area2D" parent="." index="3"]
+
+[node name="Collider" type="CollisionShape2D" parent="area2" index="0"]
+position = Vector2(7, -15)
+shape = SubResource("RectangleShape2D_jjbcb")
