@@ -1,45 +1,95 @@
-[gd_scene load_steps=10 format=3 uid="uid://mcns7vmyj2u3"]
+[gd_scene load_steps=20 format=3 uid="uid://mcns7vmyj2u3"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_227q4"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ak4cy"]
+[ext_resource type="Texture2D" uid="uid://bjyhod38hsrix" path="res://Sprites/CatIdle.png" id="4_fvsvl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0m58"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(0, 0, 32, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8co0v"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bn3h"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(32, 0, 32, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dkobb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_grbmv"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(64, 0, 32, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5aejk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8g10"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(96, 0, 32, 64)
 
 [sub_resource type="Animation" id="Animation_d7j8x"]
-resource_name = "Idle"
-length = 2.0
+resource_name = "idle"
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [SubResource("AtlasTexture_ngrur"), SubResource("AtlasTexture_8co0v"), SubResource("AtlasTexture_dkobb"), SubResource("AtlasTexture_5aejk")]
+"values": [SubResource("AtlasTexture_x0m58"), SubResource("AtlasTexture_2bn3h"), SubResource("AtlasTexture_grbmv"), SubResource("AtlasTexture_p8g10")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kgxm0"]
 _data = {
-"Idle": SubResource("Animation_d7j8x")
+"idle": SubResource("Animation_d7j8x")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3307j"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxmbh"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n31f"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swh5h"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvc24"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jj7g"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="Animation" id="Animation_ij08x"]
+resource_name = "idle"
+length = 2.33
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33, 0.66, 1, 1.33, 1.66, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("AtlasTexture_ngrur"), SubResource("AtlasTexture_rxmbh"), SubResource("AtlasTexture_0n31f"), SubResource("AtlasTexture_swh5h"), SubResource("AtlasTexture_rvc24"), SubResource("AtlasTexture_3307j"), SubResource("AtlasTexture_1jj7g")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ick8c"]
+_data = {
+"idle": SubResource("Animation_ij08x")
 }
 
 [node name="MainMenu" type="Control"]
@@ -87,25 +137,113 @@ text = "Выход"
 flat = true
 alignment = 0
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Man" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -308.0
-offset_top = -370.0
-offset_right = -123.0
+offset_left = -422.0
+offset_top = -376.0
+offset_right = -390.0
+offset_bottom = -312.0
 grow_horizontal = 0
 grow_vertical = 0
-texture = SubResource("AtlasTexture_ngrur")
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_x0m58")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
-root_node = NodePath("../..")
-autoplay = "Idle"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Man"]
+autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_kgxm0")
+}
+
+[node name="Man" type="TextureRect" parent="Man"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -422.0
+offset_top = -376.0
+offset_right = -390.0
+offset_bottom = -312.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_p8g10")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Man/Man"]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_kgxm0")
+}
+
+[node name="Man" type="TextureRect" parent="Man/Man"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -422.0
+offset_top = -376.0
+offset_right = -390.0
+offset_bottom = -312.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_p8g10")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Man/Man/Man"]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_kgxm0")
+}
+
+[node name="Man" type="TextureRect" parent="Man/Man/Man"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -422.0
+offset_top = -376.0
+offset_right = -390.0
+offset_bottom = -312.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_p8g10")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Man/Man/Man/Man"]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_kgxm0")
+}
+
+[node name="Cat" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -204.0
+offset_right = -208.0
+offset_bottom = -172.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_3307j")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
+libraries = {
+"": SubResource("AnimationLibrary_ick8c")
 }
 
 [node name="TransitionsRect" type="ColorRect" parent="."]

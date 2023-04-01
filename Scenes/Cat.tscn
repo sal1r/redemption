@@ -1,25 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2kr63xqrihve"]
+[gd_scene load_steps=5 format=3 uid="uid://b2kr63xqrihve"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
-[ext_resource type="Texture2D" uid="uid://bjyhod38hsrix" path="res://Sprites/CatIdle.png" id="3_yi3iu"]
+[ext_resource type="SpriteFrames" uid="uid://rqopevoiabds" path="res://Props/CatAnim.tres" id="3_18uc0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
-size = Vector2(51, 22.5)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dl64s"]
-atlas = ExtResource("3_yi3iu")
-region = Rect2(6.5172, 0.463476, 22.6465, 31.3364)
+size = Vector2(53, 22.5)
 
 [node name="Cat" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
 
 [node name="Collider" parent="." index="0"]
-position = Vector2(3.5, 26.25)
+position = Vector2(7.5, 26.25)
 shape = SubResource("RectangleShape2D_5r35o")
 
 [node name="Sprite" parent="." index="1"]
 y_sort_enabled = true
 scale = Vector2(3, 3)
-texture = SubResource("AtlasTexture_dl64s")
-region_rect = Rect2(5.12617, 0.425857, 24.3745, 31.5562)
+sprite_frames = ExtResource("3_18uc0")
+animation = &"idle"
+frame_progress = 0.766831
