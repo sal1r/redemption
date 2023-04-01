@@ -1,3 +1,7 @@
+AudioStreamPlayer
+Label
+Control
+CanvasLayer
 Camera2D
 CharacterBody2D
 TileMap

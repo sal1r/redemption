@@ -1,20 +1,21 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680357329
+::res://::1680358732
 icon.svg::CompressedTexture2D::4047855183685060136::1680352919::1680352938::1::::<><>::
 README.md::TextFile::-1::1680352895::0::1::::<><>::
-::res://Props/::1680354225
+::res://Props/::1680358732
+default_bus_layout.tres::AudioBusLayout::6533755195024147845::1680358713::0::1::::<><>::
 GameTiles.tres::TileSet::2096674934560621320::1680354221::0::1::::<><>::
-::res://Scenes/::1680355116
+::res://Scenes/::1680358382
 Cat.tscn::PackedScene::9125407209765376018::1680354340::0::1::::<><>::res://Scripts/Cat.gd
-Game.tscn::PackedScene::7666677928719010605::1680355116::0::1::::<><>::res://Scripts/Game.gd
+Game.tscn::PackedScene::7666677928719010605::1680358382::0::1::::<><>::res://Scripts/Game.gd
 Man.tscn::PackedScene::2535479526079288831::1680354344::0::1::::<><>::res://Scripts/Man.gd
-::res://Scripts/::1680357328
-Cat.gd::GDScript::-1::1680354294::0::1::::<>CharacterBody2D<>::
-Game.gd::GDScript::-1::1680353467::0::1::::<>Node2D<>::
+::res://Scripts/::1680358382
+BasePlayer.gd::GDScript::-1::1680358365::0::1::::Player<>CharacterBody2D<>::
+Cat.gd::GDScript::-1::1680358374::0::1::::<>Player<>::
+Game.gd::GDScript::-1::1680358325::0::1::::<>Node2D<>::
 GameManager.gd::GDScript::-1::1680353455::0::1::::<>Node<>::
-Man.gd::GDScript::-1::1680354263::0::1::::<>CharacterBody2D<>::
-::res://Sounds/::1680357328
-Balance_AudioClip Three_Vox Humana_richard termini_zip.wav::AudioStreamWAV::4033588351516576286::1680357322::1680357329::1::::<><>::
-fill.txt::TextFile::-1::1680353700::0::1::::<><>::
+Man.gd::GDScript::-1::1680358382::0::1::::<>Player<>::
+::res://Sounds/::1680358138
+Balance_AudioClip Three_Vox Humana_richard termini_zip.wav::AudioStreamWAV::4033588351516576286::1680357322::1680358138::1::::<><>::
 ::res://Sprites/::1680353492
 fill.txt::TextFile::-1::1680353492::0::1::::<><>::
