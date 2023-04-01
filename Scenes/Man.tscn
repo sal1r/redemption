@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bceg8h3apkjmd"]
+[gd_scene load_steps=5 format=3 uid="uid://cbwwkmwbtikhn"]
 
+[ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_bde4p"]
 [ext_resource type="Script" path="res://Scripts/Man.gd" id="1_e8s4s"]
+[ext_resource type="Texture2D" uid="uid://bxw2t3q7k1pwq" path="res://icon.svg" id="2_eeipn"]
 
-[node name="Man" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
+size = Vector2(120, 120)
+
+[node name="BasePlayer" instance=ExtResource("1_bde4p")]
 script = ExtResource("1_e8s4s")
+
+[node name="Collider" parent="." index="0"]
+shape = SubResource("RectangleShape2D_gi4sl")
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_eeipn")

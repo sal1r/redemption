@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3aoeg1jyuuhu"]
+[gd_scene load_steps=3 format=3 uid="uid://b2kr63xqrihve"]
 
+[ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
 
-[node name="Cat" type="CharacterBody2D"]
+[node name="BasePlayer" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
