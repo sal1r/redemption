@@ -1,22 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2kr63xqrihve"]
+[gd_scene load_steps=5 format=3 uid="uid://b0accu12cbn44"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
 [ext_resource type="SpriteFrames" uid="uid://rqopevoiabds" path="res://Props/CatAnim.tres" id="3_18uc0"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
-size = Vector2(53, 22.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifwqn"]
+size = Vector2(51, 24)
 
-[node name="Cat" instance=ExtResource("1_cbujr")]
+[node name="BasePlayer" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
 
 [node name="Collider" parent="." index="0"]
-position = Vector2(7.5, 26.25)
-shape = SubResource("RectangleShape2D_5r35o")
+position = Vector2(7.5, 27)
+shape = SubResource("RectangleShape2D_ifwqn")
 
 [node name="Sprite" parent="." index="1"]
-y_sort_enabled = true
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("3_18uc0")
 animation = &"idle"
-frame_progress = 0.766831
