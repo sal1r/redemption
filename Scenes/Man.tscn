@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_bde4p"]
 [ext_resource type="Script" path="res://Scripts/Man.gd" id="1_e8s4s"]
-[ext_resource type="Texture2D" uid="uid://bxw2t3q7k1pwq" path="res://icon.svg" id="2_eeipn"]
+[ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ublts"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
 size = Vector2(120, 120)
@@ -14,4 +14,7 @@ script = ExtResource("1_e8s4s")
 shape = SubResource("RectangleShape2D_gi4sl")
 
 [node name="Sprite" parent="." index="1"]
-texture = ExtResource("2_eeipn")
+scale = Vector2(4, 4)
+texture = ExtResource("3_ublts")
+region_enabled = true
+region_rect = Rect2(4.47801, 5.44971, 25.6802, 58.5422)

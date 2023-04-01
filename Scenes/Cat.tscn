@@ -2,16 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
-[ext_resource type="Texture2D" uid="uid://bxw2t3q7k1pwq" path="res://icon.svg" id="3_13ele"]
+[ext_resource type="Texture2D" uid="uid://bjyhod38hsrix" path="res://Sprites/CatIdle.png" id="3_yi3iu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
-size = Vector2(126, 124)
+size = Vector2(84, 124)
 
 [node name="Cat" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
 
 [node name="Collider" parent="." index="0"]
+position = Vector2(-2, 0)
 shape = SubResource("RectangleShape2D_5r35o")
 
 [node name="Sprite" parent="." index="1"]
-texture = ExtResource("3_13ele")
+scale = Vector2(4, 4)
+texture = ExtResource("3_yi3iu")
+region_enabled = true
+region_rect = Rect2(5.12617, 0.425857, 24.3745, 31.5562)

@@ -6,10 +6,10 @@ extends Node2D
 var target = false
 
 func _physics_process(delta):
-	if target:
+	if !target:
 		camera.position.x = man.position.x
 		camera.position.y = man.position.y
-	elif !target:
+	elif target:
 		camera.position.x = cat.position.x
 		camera.position.y = cat.position.y
 
