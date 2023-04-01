@@ -1,8 +1,8 @@
+res://Scenes/Cat.tscn
 res://Scenes/Game.tscn
 res://Scenes/Man.tscn
-res://Scenes/Cat.tscn
-res://Scripts/Game.gd
 res://Scripts/BasePlayer.gd
+<<<<<<< HEAD
 res://Scripts/Cat.gd
 res://Scripts/Man.gd
 res://default_bus_layout.tres
@@ -11,3 +11,5 @@ res://Scenes/Music.tscn
 res://Scenes/BasePlayer.tscn
 res://Scenes/MainMenu.tscn
 res://Props/Theme.tres
+=======
+>>>>>>> 5d72e2756eb922153b3d39128eda3f2a557a92e9
