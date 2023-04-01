@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://mcns7vmyj2u3"]
+[gd_scene load_steps=4 format=3 uid="uid://mcns7vmyj2u3"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_227q4"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
+[ext_resource type="Texture2D" uid="uid://cv28a5i76yolp" path="res://Sprites/Man.png" id="3_lq8ub"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,32 +14,32 @@ grow_vertical = 2
 theme = ExtResource("1_227q4")
 script = ExtResource("2_hwbt6")
 
-[node name="Center" type="CenterContainer" parent="."]
+[node name="Buttons" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 2
+anchor_top = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -2.0
+offset_top = -220.0
+offset_right = 298.0
+offset_bottom = -80.0
+grow_vertical = 0
 
-[node name="Buttons" type="VBoxContainer" parent="Center"]
-layout_mode = 2
-
-[node name="Play" type="Button" parent="Center/Buttons"]
+[node name="Play" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
 focus_mode = 0
 text = "Играть"
 flat = true
 
-[node name="Authors" type="Button" parent="Center/Buttons"]
+[node name="Authors" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
 focus_mode = 0
 text = "Авторы"
 flat = true
 
-[node name="Exit" type="Button" parent="Center/Buttons"]
+[node name="Exit" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
 focus_mode = 0
@@ -54,6 +55,20 @@ offset_right = 1749.0
 offset_bottom = 1069.0
 color = Color(0, 0, 0, 0)
 
-[connection signal="pressed" from="Center/Buttons/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Center/Buttons/Authors" to="." method="_on_authors_pressed"]
-[connection signal="pressed" from="Center/Buttons/Exit" to="." method="_on_exit_pressed"]
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -308.0
+offset_top = -370.0
+offset_right = -77.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("3_lq8ub")
+
+[connection signal="pressed" from="Buttons/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Buttons/Authors" to="." method="_on_authors_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
