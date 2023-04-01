@@ -5,16 +5,18 @@
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ublts"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
-size = Vector2(120, 120)
+size = Vector2(60, 18)
 
 [node name="Man" instance=ExtResource("1_bde4p")]
 script = ExtResource("1_e8s4s")
 
 [node name="Collider" parent="." index="0"]
+position = Vector2(0, 79)
 shape = SubResource("RectangleShape2D_gi4sl")
 
 [node name="Sprite" parent="." index="1"]
-scale = Vector2(4, 4)
+y_sort_enabled = true
+scale = Vector2(3, 3)
 texture = ExtResource("3_ublts")
 region_enabled = true
 region_rect = Rect2(4.47801, 5.44971, 25.6802, 58.5422)

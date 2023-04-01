@@ -18,6 +18,7 @@ drag_bottom_margin = 0.3
 editor_draw_drag_margin = true
 
 [node name="Man" parent="." instance=ExtResource("2_i0hag")]
-position = Vector2(412, -59)
+position = Vector2(-34, -3)
 
 [node name="Cat" parent="." instance=ExtResource("3_mq3mr")]
+position = Vector2(58, 10)
