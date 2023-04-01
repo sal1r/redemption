@@ -1,7 +1,13 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680353373
+::res://::1680353379
 icon.svg::CompressedTexture2D::4047855183685060136::1680352919::1680352938::1::::<><>::
 README.md::TextFile::-1::1680352895::0::1::::<><>::
-::res://Scenes/::1680353360
-::res://Scripts/::1680353369
-::res://Sprites/::1680353373
+::res://Props/::1680353482
+fill.txt::TextFile::-1::1680353482::0::1::::<><>::
+::res://Scenes/::1680353469
+Game.tscn::PackedScene::7666677928719010605::1680353469::0::1::::<><>::res://Scripts/Game.gd
+::res://Scripts/::1680353467
+GameManagers.gd::GDScript::-1::1680353455::0::1::::<>Node<>::
+Game.gd::GDScript::-1::1680353467::0::1::::<>Node2D<>::
+::res://Sprites/::1680353492
+fill.txt::TextFile::-1::1680353492::0::1::::<><>::
