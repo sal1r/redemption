@@ -11,6 +11,3 @@ func walk():
 
 	if direction:
 		pass # walk
-
-func _physics_process(delta):
-	walk()

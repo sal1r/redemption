@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2kr63xqrihve"]
+[gd_scene load_steps=5 format=3 uid="uid://b2kr63xqrihve"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
+[ext_resource type="Texture2D" uid="uid://bxw2t3q7k1pwq" path="res://icon.svg" id="3_13ele"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
+size = Vector2(126, 124)
 
 [node name="BasePlayer" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
+
+[node name="Collider" parent="." index="0"]
+shape = SubResource("RectangleShape2D_5r35o")
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("3_13ele")
