@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://m84g4a1jwpaq"]
+
+[ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="1_ktfnn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n436k"]
+atlas = ExtResource("1_ktfnn")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4du2e"]
+atlas = ExtResource("1_ktfnn")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pupb6"]
+atlas = ExtResource("1_ktfnn")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wps8e"]
+atlas = ExtResource("1_ktfnn")
+region = Rect2(96, 0, 32, 64)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n436k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4du2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pupb6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wps8e")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
