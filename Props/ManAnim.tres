@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://m84g4a1jwpaq"]
-=======
-[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bmlqsgvia87pd"]
->>>>>>> 2d715340b87f727e620f3ff33e0c0f612c48c709
+[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://bmlqsgvia87pd"]
 
 [ext_resource type="Texture2D" uid="uid://4hkbavu74k21" path="res://Sprites/ManWalk.png" id="1_6xryc"]
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="1_ktfnn"]
