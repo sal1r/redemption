@@ -1,25 +1,26 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680355688
+::res://::1680358967
 icon.svg::CompressedTexture2D::4047855183685060136::1680355376::1680355376::1::::<><>::
 README.md::TextFile::-1::1680355376::0::1::::<><>::
-::res://Props/::1680355376
+::res://Props/::1680358272
 AudioBusLayout.tres::AudioBusLayout::6533755195024147845::1680355376::0::1::::<><>::
 GameTiles.tres::TileSet::2096674934560621320::1680355376::0::1::::<><>::
-joystix monospace.otf::FontFile::280949409324261976::1680355376::1680355376::1::::<><>::
-Theme.tres::Theme::2168074789028579796::1680355376::0::1::::<><>::uid://eadgwi0q0nq3
-::res://Scenes/::1680355460
+joystix monospace.otf::FontFile::280949409324261976::1680355376::1680358272::1::::<><>::
+Theme.tres::Theme::2168074789028579796::1680358272::0::1::::<><>::uid://eadgwi0q0nq3
+::res://Scenes/::1680358686
 BasePlayer.tscn::PackedScene::4455451669611203979::1680355376::0::1::::<><>::res://Scripts/BasePlayer.gd
-Cat.tscn::PackedScene::4303252294882968186::1680355376::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Cat.gd
-Game.tscn::PackedScene::7666677928719010605::1680355460::0::1::::<><>::res://Scripts/Game.gd<>uid://cbwwkmwbtikhn
-MainMenu.tscn::PackedScene::847218058126540472::1680355460::0::1::::<><>::uid://55h40ru4icdw
-Man.tscn::PackedScene::4889800817730511667::1680355376::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Man.gd<>uid://bxw2t3q7k1pwq
+Cat.tscn::PackedScene::4303252294882968186::1680358686::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Cat.gd<>uid://bxw2t3q7k1pwq
+Game.tscn::PackedScene::7666677928719010605::1680358686::0::1::::<><>::res://Scripts/Game.gd<>uid://cbwwkmwbtikhn<>uid://b2kr63xqrihve
+MainMenu.tscn::PackedScene::847218058126540472::1680358686::0::1::::<><>::uid://55h40ru4icdw<>res://Scripts/MainMenu.gd
+Man.tscn::PackedScene::4889800817730511667::1680358686::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Man.gd<>uid://bxw2t3q7k1pwq
 Music.tscn::PackedScene::6411307272546694236::1680355376::0::1::::<><>::uid://bxp5u1eiufmag
-::res://Scripts/::1680355376
-BasePlayer.gd::GDScript::-1::1680355376::0::1::::Player<>CharacterBody2D<>::
-Cat.gd::GDScript::-1::1680355376::0::1::::<>Player<>::
-Game.gd::GDScript::-1::1680355376::0::1::::<>Node2D<>::
-GameManager.gd::GDScript::-1::1680355376::0::1::::<>Node<>::
-Man.gd::GDScript::-1::1680355376::0::1::::<>Player<>::
+::res://Scripts/::1680358686
+BasePlayer.gd::GDScript::-1::1680357029::0::1::::Player<>CharacterBody2D<>::
+Cat.gd::GDScript::-1::1680357020::0::1::::<>Player<>::
+Game.gd::GDScript::-1::1680358686::0::1::::<>Node2D<>::
+GameManager.gd::GDScript::-1::1680358272::0::1::::<>Node<>::
+MainMenu.gd::GDScript::-1::1680358272::0::1::::<>Control<>::
+Man.gd::GDScript::-1::1680356459::0::1::::<>Player<>::
 ::res://Sounds/::1680355376
 Balance_AudioClip Three_Vox Humana_richard termini_zip.wav::AudioStreamWAV::4033588351516576286::1680355376::1680355376::1::::<><>::
 ::res://Sprites/::1680355376

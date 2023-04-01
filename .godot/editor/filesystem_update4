@@ -1,9 +1,1 @@
-res://Scenes/Game.tscn
-res://Scripts/BasePlayer.gd
-res://Scripts/Man.gd
-res://Scripts/Cat.gd
 res://Scenes/MainMenu.tscn
-res://Scripts/GameManager.gd
-res://Scenes/Man.tscn
-res://Scenes/Cat.tscn
-res://Scripts/Game.gd
