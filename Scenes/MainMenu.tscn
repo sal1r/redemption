@@ -42,10 +42,6 @@ _data = {
 "idle": SubResource("Animation_d7j8x")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1jj7g"]
-atlas = ExtResource("4_fvsvl")
-region = Rect2(192, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
 atlas = ExtResource("4_fvsvl")
 region = Rect2(0, 0, 32, 32)
@@ -69,6 +65,10 @@ region = Rect2(128, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_3307j"]
 atlas = ExtResource("4_fvsvl")
 region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jj7g"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="Animation" id="Animation_ij08x"]
 resource_name = "idle"
@@ -239,9 +239,10 @@ offset_bottom = -172.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(5, 5)
-texture = SubResource("AtlasTexture_1jj7g")
+texture = SubResource("AtlasTexture_ngrur")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
+autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_ick8c")
 }
