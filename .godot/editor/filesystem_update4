@@ -7,3 +7,4 @@ res://Scripts/Cat.gd
 res://Scripts/Man.gd
 res://default_bus_layout.tres
 res://Props/AudioBusLayout.tres
+res://Scenes/Music.tscn

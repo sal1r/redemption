@@ -22,6 +22,7 @@ buses/default_bus_layout="res://Props/AudioBusLayout.tres"
 [autoload]
 
 GameManager="*res://Scripts/GameManager.gd"
+Music="*res://Scenes/Music.tscn"
 
 [display]
 

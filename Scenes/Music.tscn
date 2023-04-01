@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxlxj87lgfoq3"]
+
+[ext_resource type="AudioStream" uid="uid://bxp5u1eiufmag" path="res://Sounds/Balance_AudioClip Three_Vox Humana_richard termini_zip.wav" id="1_ivttp"]
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = ExtResource("1_ivttp")
+bus = &"Music"

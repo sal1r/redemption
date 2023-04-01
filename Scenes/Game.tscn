@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=2 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
-[ext_resource type="AudioStream" uid="uid://bxp5u1eiufmag" path="res://Sounds/Balance_AudioClip Three_Vox Humana_richard termini_zip.wav" id="2_wkykx"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kjom4")
@@ -10,7 +9,3 @@ script = ExtResource("1_kjom4")
 format = 2
 
 [node name="MainCamera" type="Camera2D" parent="."]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_wkykx")
-bus = &"Music"
