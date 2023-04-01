@@ -11,6 +11,7 @@ script = ExtResource("1_kjom4")
 format = 2
 
 [node name="MainCamera" type="Camera2D" parent="."]
+position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 drag_top_margin = 0.3

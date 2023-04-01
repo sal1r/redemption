@@ -9,6 +9,3 @@ func walk():
 	direction = Input.get_vector("left", "right", "up", "down")
 
 	velocity = direction.normalized() * speed
-
-	if direction:
-		pass # walk

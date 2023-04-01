@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_bde4p"]
 [ext_resource type="Script" path="res://Scripts/Man.gd" id="1_e8s4s"]
-[ext_resource type="SpriteFrames" uid="uid://m84g4a1jwpaq" path="res://Props/ManAnim.tres" id="3_5yple"]
+[ext_resource type="SpriteFrames" uid="uid://bmlqsgvia87pd" path="res://Props/ManAnim.tres" id="3_5yple"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
 size = Vector2(60, 18)
