@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
 size = Vector2(126, 124)
 
-[node name="BasePlayer" instance=ExtResource("1_cbujr")]
+[node name="Cat" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
 
 [node name="Collider" parent="." index="0"]

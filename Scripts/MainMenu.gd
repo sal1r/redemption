@@ -1,8 +1,5 @@
 extends Control
 
-@onready var play = $Center/Buttons/Play
-@onready var authors = $Center/Buttons/Authors
-@onready var exit = $Center/Buttons/Exit
 @onready var transition_rect = $TransitionsRect
 var transition = false
 var transition_stage = 0

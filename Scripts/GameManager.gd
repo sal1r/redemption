@@ -9,5 +9,3 @@ func load_game(): # Переписать на загрузку в фоне пр�
 
 func exit():
 	get_tree().quit()
-
-var target: bool = false
