@@ -7,3 +7,5 @@ script = ExtResource("1_kjom4")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
