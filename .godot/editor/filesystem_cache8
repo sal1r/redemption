@@ -1,20 +1,23 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680358732
+::res://::1680361104
 icon.svg::CompressedTexture2D::4047855183685060136::1680352919::1680352938::1::::<><>::
 README.md::TextFile::-1::1680352895::0::1::::<><>::
-::res://Props/::1680358732
-default_bus_layout.tres::AudioBusLayout::6533755195024147845::1680358713::0::1::::<><>::
+::res://Props/::1680364261
+AudioBusLayout.tres::AudioBusLayout::6533755195024147845::1680358874::0::1::::<><>::
 GameTiles.tres::TileSet::2096674934560621320::1680354221::0::1::::<><>::
-::res://Scenes/::1680358382
-Cat.tscn::PackedScene::9125407209765376018::1680354340::0::1::::<><>::res://Scripts/Cat.gd
-Game.tscn::PackedScene::7666677928719010605::1680358382::0::1::::<><>::res://Scripts/Game.gd
-Man.tscn::PackedScene::2535479526079288831::1680354344::0::1::::<><>::res://Scripts/Man.gd
-::res://Scripts/::1680358382
-BasePlayer.gd::GDScript::-1::1680358365::0::1::::Player<>CharacterBody2D<>::
-Cat.gd::GDScript::-1::1680358374::0::1::::<>Player<>::
+joystix monospace.otf::FontFile::280949409324261976::1680364261::1680364262::1::::<><>::
+::res://Scenes/::1680362333
+Game.tscn::PackedScene::7666677928719010605::1680362333::0::1::::<><>::res://Scripts/Game.gd<>uid://cbwwkmwbtikhn
+Music.tscn::PackedScene::6411307272546694236::1680360158::0::1::::<><>::uid://bxp5u1eiufmag
+BasePlayer.tscn::PackedScene::4455451669611203979::1680361412::0::1::::<><>::res://Scripts/BasePlayer.gd
+Man.tscn::PackedScene::4889800817730511667::1680361595::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Man.gd<>uid://bxw2t3q7k1pwq
+Cat.tscn::PackedScene::4303252294882968186::1680361598::0::1::::<><>::uid://b4qivxt4wsbjf<>res://Scripts/Cat.gd
+::res://Scripts/::1680362149
+BasePlayer.gd::GDScript::-1::1680362149::0::1::::Player<>CharacterBody2D<>::
+Cat.gd::GDScript::-1::1680361566::0::1::::<>Player<>::
 Game.gd::GDScript::-1::1680358325::0::1::::<>Node2D<>::
 GameManager.gd::GDScript::-1::1680353455::0::1::::<>Node<>::
-Man.gd::GDScript::-1::1680358382::0::1::::<>Player<>::
+Man.gd::GDScript::-1::1680361569::0::1::::<>Player<>::
 ::res://Sounds/::1680358138
 Balance_AudioClip Three_Vox Humana_richard termini_zip.wav::AudioStreamWAV::4033588351516576286::1680357322::1680358138::1::::<><>::
 ::res://Sprites/::1680353492
