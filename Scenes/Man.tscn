@@ -18,5 +18,5 @@ shape = SubResource("RectangleShape2D_gi4sl")
 y_sort_enabled = true
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("3_5yple")
-animation = &"idle"
-frame_progress = 0.908812
+animation = &"Walk"
+frame_progress = 0.319444

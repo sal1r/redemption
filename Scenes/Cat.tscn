@@ -18,3 +18,5 @@ shape = SubResource("RectangleShape2D_ifwqn")
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("3_18uc0")
 animation = &"idle"
+frame = 1
+frame_progress = 0.10183
