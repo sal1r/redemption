@@ -6,11 +6,11 @@ extends Node2D
 
 func _physics_process(delta):
 	if GameManager.target:
-		camera.position.x = floor(cat.position.x)
-		camera.position.y = floor(cat.position.y)
+		camera.position.x = cat.position.x
+		camera.position.y = cat.position.y
 	elif not GameManager.target:
-		camera.position.x = floor(man.position.x)
-		camera.position.y = floor(man.position.y)
+		camera.position.x = man.position.x
+		camera.position.y = man.position.y
 
 func _input(event):
 	if event.is_action_pressed("character_change"):
