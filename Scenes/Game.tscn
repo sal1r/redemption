@@ -4,3 +4,6 @@
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kjom4")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
