@@ -45,6 +45,15 @@ focus_mode = 0
 text = "Выход"
 flat = true
 
+[node name="TransitionsRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -353.0
+offset_top = -342.0
+offset_right = 1749.0
+offset_bottom = 1069.0
+color = Color(0, 0, 0, 0)
+
 [connection signal="pressed" from="Center/Buttons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Center/Buttons/Authors" to="." method="_on_authors_pressed"]
 [connection signal="pressed" from="Center/Buttons/Exit" to="." method="_on_exit_pressed"]
