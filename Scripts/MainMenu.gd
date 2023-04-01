@@ -20,3 +20,22 @@ func _on_authors_pressed():
 
 func _on_exit_pressed():
 	GameManager.exit()
+
+
+func _on_play_mouse_entered():
+	$Buttons/Play.modulate.a = 0.5
+	
+func _on_play_mouse_exited():
+	$Buttons/Play.modulate.a = 1
+
+func _on_authors_mouse_entered():
+	$Buttons/Authors.modulate.a = 0.5
+	
+func _on_authors_mouse_exited():
+	$Buttons/Authors.modulate.a = 1
+
+func _on_exit_mouse_entered():
+	$Buttons/Exit.modulate.a = 0.5
+
+func _on_exit_mouse_exited():
+	$Buttons/Exit.modulate.a = 1

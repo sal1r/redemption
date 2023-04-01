@@ -117,6 +117,12 @@ offset_right = 1749.0
 offset_bottom = 1069.0
 color = Color(0, 0, 0, 0)
 
+[connection signal="mouse_entered" from="Buttons/Play" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Play" to="." method="_on_play_mouse_exited"]
 [connection signal="pressed" from="Buttons/Play" to="." method="_on_play_pressed"]
+[connection signal="mouse_entered" from="Buttons/Authors" to="." method="_on_authors_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Authors" to="." method="_on_authors_mouse_exited"]
 [connection signal="pressed" from="Buttons/Authors" to="." method="_on_authors_pressed"]
+[connection signal="mouse_entered" from="Buttons/Exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Exit" to="." method="_on_exit_mouse_exited"]
 [connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
