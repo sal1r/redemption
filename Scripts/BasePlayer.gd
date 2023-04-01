@@ -11,6 +11,10 @@ func walk():
 
 	if direction:
 		pass # walk
-
-func _physics_process(delta):
-	walk()
+		
+func _input(event):
+	if event.is_action_pressed("character_change"):
+		if GameManager.target:
+			GameManager.target = false
+		elif not GameManager.target:
+			GameManager.target = true

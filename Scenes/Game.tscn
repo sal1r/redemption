@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=4 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
 [ext_resource type="PackedScene" uid="uid://cbwwkmwbtikhn" path="res://Scenes/Man.tscn" id="2_i0hag"]
+[ext_resource type="PackedScene" uid="uid://b2kr63xqrihve" path="res://Scenes/Cat.tscn" id="3_mq3mr"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kjom4")
@@ -16,4 +17,7 @@ drag_top_margin = 0.3
 drag_bottom_margin = 0.3
 editor_draw_drag_margin = true
 
-[node name="BasePlayer" parent="." instance=ExtResource("2_i0hag")]
+[node name="Man" parent="." instance=ExtResource("2_i0hag")]
+position = Vector2(412, -59)
+
+[node name="Cat" parent="." instance=ExtResource("3_mq3mr")]
