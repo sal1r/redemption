@@ -26,12 +26,13 @@ oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
-compress=true
+compress=false
 preload=[{
 "chars": [],
 "glyphs": [],
 "name": "Новая конфигурация",
-"size": Vector2i(16, 0)
+"size": Vector2i(16, 0),
+"variation_embolden": 0.0
 }]
 language_support={}
 script_support={}

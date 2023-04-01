@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://mcns7vmyj2u3"]
+[gd_scene load_steps=3 format=3 uid="uid://mcns7vmyj2u3"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_227q4"]
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -10,8 +11,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_227q4")
+script = ExtResource("2_hwbt6")
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="Center" type="CenterContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,10 +21,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="Buttons" type="VBoxContainer" parent="Center"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Play" type="Button" parent="Center/Buttons"]
 custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
+focus_mode = 0
 text = "Играть"
+flat = true
+
+[node name="Authors" type="Button" parent="Center/Buttons"]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 2
+focus_mode = 0
+text = "Авторы"
+flat = true
+
+[node name="Exit" type="Button" parent="Center/Buttons"]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 2
+focus_mode = 0
+text = "Выход"
+flat = true
+
+[connection signal="pressed" from="Center/Buttons/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Center/Buttons/Authors" to="." method="_on_authors_pressed"]
+[connection signal="pressed" from="Center/Buttons/Exit" to="." method="_on_exit_pressed"]
