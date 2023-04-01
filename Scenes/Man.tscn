@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbwwkmwbtikhn"]
+[gd_scene load_steps=6 format=3 uid="uid://cbwwkmwbtikhn"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_bde4p"]
 [ext_resource type="Script" path="res://Scripts/Man.gd" id="1_e8s4s"]
@@ -6,6 +6,10 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
 size = Vector2(60, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iemf2"]
+atlas = ExtResource("3_ublts")
+region = Rect2(3.60633, 6.43318, 26.3331, 57.4062)
 
 [node name="Man" instance=ExtResource("1_bde4p")]
 script = ExtResource("1_e8s4s")
@@ -17,6 +21,5 @@ shape = SubResource("RectangleShape2D_gi4sl")
 [node name="Sprite" parent="." index="1"]
 y_sort_enabled = true
 scale = Vector2(3, 3)
-texture = ExtResource("3_ublts")
-region_enabled = true
+texture = SubResource("AtlasTexture_iemf2")
 region_rect = Rect2(4.47801, 5.44971, 25.6802, 58.5422)

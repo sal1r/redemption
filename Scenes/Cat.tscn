@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2kr63xqrihve"]
+[gd_scene load_steps=6 format=3 uid="uid://b2kr63xqrihve"]
 
 [ext_resource type="PackedScene" uid="uid://b4qivxt4wsbjf" path="res://Scenes/BasePlayer.tscn" id="1_cbujr"]
 [ext_resource type="Script" path="res://Scripts/Cat.gd" id="1_h4ja7"]
@@ -6,6 +6,10 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r35o"]
 size = Vector2(51, 22.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl64s"]
+atlas = ExtResource("3_yi3iu")
+region = Rect2(6.5172, 0.463476, 22.6465, 31.3364)
 
 [node name="Cat" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
@@ -17,6 +21,5 @@ shape = SubResource("RectangleShape2D_5r35o")
 [node name="Sprite" parent="." index="1"]
 y_sort_enabled = true
 scale = Vector2(3, 3)
-texture = ExtResource("3_yi3iu")
-region_enabled = true
+texture = SubResource("AtlasTexture_dl64s")
 region_rect = Rect2(5.12617, 0.425857, 24.3745, 31.5562)
