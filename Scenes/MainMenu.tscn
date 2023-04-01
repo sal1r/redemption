@@ -4,10 +4,6 @@
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ak4cy"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5aejk"]
-atlas = ExtResource("3_ak4cy")
-region = Rect2(96, 0, 32, 64)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(0, 0, 32, 64)
@@ -19,6 +15,10 @@ region = Rect2(32, 0, 32, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dkobb"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5aejk"]
+atlas = ExtResource("3_ak4cy")
+region = Rect2(96, 0, 32, 64)
 
 [sub_resource type="Animation" id="Animation_d7j8x"]
 resource_name = "Idle"
@@ -99,7 +99,7 @@ offset_top = -370.0
 offset_right = -77.0
 grow_horizontal = 0
 grow_vertical = 0
-texture = SubResource("AtlasTexture_5aejk")
+texture = SubResource("AtlasTexture_ngrur")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
 root_node = NodePath("../..")
