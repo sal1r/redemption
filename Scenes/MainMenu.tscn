@@ -19,32 +19,35 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_top = -220.0
-offset_right = 298.0
-offset_bottom = -80.0
+offset_left = 40.0
+offset_top = -180.0
+offset_right = 240.0
+offset_bottom = -40.0
 grow_vertical = 0
 
 [node name="Play" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(300, 40)
+custom_minimum_size = Vector2(200, 40)
 layout_mode = 2
 focus_mode = 0
 text = "Играть"
 flat = true
+alignment = 0
 
 [node name="Authors" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(300, 40)
+custom_minimum_size = Vector2(200, 40)
 layout_mode = 2
 focus_mode = 0
 text = "Авторы"
 flat = true
+alignment = 0
 
 [node name="Exit" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(300, 40)
+custom_minimum_size = Vector2(200, 40)
 layout_mode = 2
 focus_mode = 0
 text = "Выход"
 flat = true
+alignment = 0
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
