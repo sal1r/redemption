@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f28mo27febse"
-path="res://.godot/imported/gg4.png-68a45b63879586f971fcf21f69ecb27f.ctex"
+uid="uid://4hkbavu74k21"
+path="res://.godot/imported/ManWalk.png-6f53027d02942d6030db3b87835e9a7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/gg4.png"
-dest_files=["res://.godot/imported/gg4.png-68a45b63879586f971fcf21f69ecb27f.ctex"]
+source_file="res://Sprites/ManWalk.png"
+dest_files=["res://.godot/imported/ManWalk.png-6f53027d02942d6030db3b87835e9a7e.ctex"]
 
 [params]
 

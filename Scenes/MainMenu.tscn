@@ -1,11 +1,24 @@
-[gd_scene load_steps=9 format=3 uid="uid://mcns7vmyj2u3"]
+[gd_scene load_steps=10 format=3 uid="uid://mcns7vmyj2u3"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_227q4"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
-[ext_resource type="Texture2D" uid="uid://dipwtow150kgu" path="res://Sprites/gg1.png" id="3_2roh7"]
-[ext_resource type="Texture2D" uid="uid://uh6ci26ll72a" path="res://Sprites/gg2.png" id="4_2ek1i"]
-[ext_resource type="Texture2D" uid="uid://bvipaojyvgxe7" path="res://Sprites/gg3.png" id="5_0qdir"]
-[ext_resource type="Texture2D" uid="uid://f28mo27febse" path="res://Sprites/gg4.png" id="6_xei6n"]
+[ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ak4cy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5aejk"]
+atlas = ExtResource("3_ak4cy")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
+atlas = ExtResource("3_ak4cy")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8co0v"]
+atlas = ExtResource("3_ak4cy")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkobb"]
+atlas = ExtResource("3_ak4cy")
+region = Rect2(64, 0, 32, 64)
 
 [sub_resource type="Animation" id="Animation_d7j8x"]
 resource_name = "Idle"
@@ -21,7 +34,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5, 1, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("3_2roh7"), ExtResource("4_2ek1i"), ExtResource("5_0qdir"), ExtResource("6_xei6n")]
+"values": [SubResource("AtlasTexture_ngrur"), SubResource("AtlasTexture_8co0v"), SubResource("AtlasTexture_dkobb"), SubResource("AtlasTexture_5aejk")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kgxm0"]
@@ -86,7 +99,7 @@ offset_top = -370.0
 offset_right = -77.0
 grow_horizontal = 0
 grow_vertical = 0
-texture = ExtResource("5_0qdir")
+texture = SubResource("AtlasTexture_5aejk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
 root_node = NodePath("../..")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uh6ci26ll72a"
-path="res://.godot/imported/gg2.png-004130e2325608e0b48f987232da226e.ctex"
+uid="uid://bicrscyh16sg4"
+path="res://.godot/imported/ManIdle.png-66afa1d9e7bbcef3f5ce4e9714af3909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/gg2.png"
-dest_files=["res://.godot/imported/gg2.png-004130e2325608e0b48f987232da226e.ctex"]
+source_file="res://Sprites/ManIdle.png"
+dest_files=["res://.godot/imported/ManIdle.png-66afa1d9e7bbcef3f5ce4e9714af3909.ctex"]
 
 [params]
 
