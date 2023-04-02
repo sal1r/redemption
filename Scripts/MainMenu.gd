@@ -8,7 +8,7 @@ func _physics_process(delta):
 	if transition:
 		transition_stage += 0.02
 		transition_rect.color.a = transition_stage
-		if transition_stage >= 1:
+		if transition_stage >= 1.5:
 			GameManager.load_game()
 
 func _on_play_pressed():
