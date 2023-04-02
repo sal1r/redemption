@@ -3,7 +3,7 @@ class_name Player
 
 @onready var anim = $Sprite
 @onready var game = get_node("/root/Game")
-
+@onready var item = game.NONE
 var speed = 500
 var direction = Vector2.ZERO
 

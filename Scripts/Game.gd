@@ -1,8 +1,10 @@
 extends Node2D
 
+enum {NONE, KEY, COIN}
+
 @onready var camera = $MainCamera
-@onready var man = $Man
-@onready var cat = $Cat
+@onready var man = $PlayersSort/Man
+@onready var cat = $PlayersSort/Cat
 @onready var dialog = $CanvasLayer/TextureRect
 var transition_stage = 0
 var transition = false

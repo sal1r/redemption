@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brfaf1yt6a6yj"
-path="res://.godot/imported/DialogPanel.png-4e09bb9f1a914aa2c7949486bf806f0a.ctex"
+path="res://.godot/imported/DialogPanel.png-0bf0cdd87982d2e8297b8b19b76f1cff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DialogPanel.png"
-dest_files=["res://.godot/imported/DialogPanel.png-4e09bb9f1a914aa2c7949486bf806f0a.ctex"]
+source_file="res://DialogPanel.png"
+dest_files=["res://.godot/imported/DialogPanel.png-0bf0cdd87982d2e8297b8b19b76f1cff.ctex"]
 
 [params]
 
