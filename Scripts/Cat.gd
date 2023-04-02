@@ -1,7 +1,7 @@
 extends Player
 
 func _ready():
-	speed = 350
+	speed = 300
 
 func _physics_process(delta):
 	if game.target:

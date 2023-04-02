@@ -1,6 +1,8 @@
 extends Control
 
 @onready var transition_rect = $TransitionsRect
+@onready var authors = $Authors
+@onready var controls = $Controls
 var transition = false
 var transition_stage = 0
 
@@ -16,7 +18,16 @@ func _on_play_pressed():
 	transition_rect.visible = true
 
 func _on_authors_pressed():
-	pass # Replace with function body.
+	authors.visible = true
 
 func _on_exit_pressed():
 	GameManager.exit()
+
+
+func _on_controls_pressed():
+		controls.visible = true
+
+func _input(event):
+	if event.is_action_pressed("enter"):
+		authors.visible = false
+		controls.visible = false
