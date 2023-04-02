@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/UI.gd" id="2_fcbud"]
 
 [node name="UI" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,13 +15,14 @@ theme = ExtResource("1_h6e0f")
 script = ExtResource("2_fcbud")
 
 [node name="Pause" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.196078)
+color = Color(0, 0, 0, 0.588235)
 
 [node name="Buttons" type="VBoxContainer" parent="Pause"]
 layout_mode = 1
@@ -55,3 +57,5 @@ text = "Выход"
 flat = true
 
 [connection signal="pressed" from="Pause/Buttons/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Pause/Buttons/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Pause/Buttons/Exit" to="." method="_on_exit_pressed"]

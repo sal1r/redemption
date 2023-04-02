@@ -5,7 +5,7 @@ extends Node2D
 @onready var cat = $Cat
 @onready var dialog = $CanvasLayer/TextureRect
 var transition_stage = 0
-var transition: bool = false
+var transition = false
 var target = false
 
 func _process(delta):
@@ -28,6 +28,3 @@ func _input(event):
 	if event.is_action_pressed("enter"):
 		if !transition:
 			transition == true
-			
-	if event.is_action_pressed("ui_cancel"):
-		get_tree().paused = true

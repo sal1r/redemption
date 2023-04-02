@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=8 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
 [ext_resource type="PackedScene" uid="uid://cbwwkmwbtikhn" path="res://Scenes/Man.tscn" id="2_i0hag"]
 [ext_resource type="PackedScene" uid="uid://b0accu12cbn44" path="res://Scenes/Cat.tscn" id="3_mq3mr"]
+[ext_resource type="PackedScene" uid="uid://dmpjdh7ehom26" path="res://Scenes/UI.tscn" id="4_aq1oa"]
 [ext_resource type="Texture2D" uid="uid://brfaf1yt6a6yj" path="res://Sprites/DialogPanel.png" id="4_eax30"]
 [ext_resource type="FontFile" uid="uid://eadgwi0q0nq3" path="res://Props/joystix monospace.otf" id="5_vg4dc"]
 
@@ -50,3 +51,5 @@ offset_bottom = 88.0
 scale = Vector2(0.05, 0.05)
 text = "КАКОЙ-ТО ТЕКСТ"
 label_settings = SubResource("LabelSettings_7v6cn")
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_aq1oa")]
