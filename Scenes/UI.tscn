@@ -132,6 +132,7 @@ text = "[center]Вот твоя жизнь и закончилась.
 [font_size=12]  для продолжения нажмите Enter[/font_size]"
 
 [node name="EndDialog" type="ColorRect" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15

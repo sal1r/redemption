@@ -16,5 +16,8 @@ func load_menu(): # Переписать на загрузку в фоне пр�
 func play_music():
 	Music.play()
 
+func stop_music():
+	Music.stop()
+
 func exit():
 	get_tree().quit()

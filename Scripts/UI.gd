@@ -45,16 +45,16 @@ func _physics_process(delta):
 	
 	if end_transition:
 		end_transition_stage += 0.02
-		end_dialog_text.modulate.a = end_transition_stage
+		end_dialog.modulate.a = end_transition_stage
 		if end_transition_stage >= 1:
 			end_transition = false
+			end_text_transition = true
 	
 	if end_text_transition:
 		end_text_transition_stage += 0.02
 		end_dialog_text.modulate.a = end_text_transition_stage
 		if end_text_transition_stage >= 1.5:
 			end_text_transition = false
-			end_text_transition = true
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
