@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4crabpqhlefq"]
+
+[ext_resource type="Texture2D" uid="uid://cu7khs3uk4dm0" path="res://Sprites/arka_with_door.png" id="1_368cs"]
+[ext_resource type="Script" path="res://Scripts/Door.gd" id="1_bo0r8"]
+[ext_resource type="Texture2D" uid="uid://boyxv3fq0ghay" path="res://Sprites/arka_with_opendoor.png" id="3_eo1wc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwr0r"]
+size = Vector2(70, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qew5d"]
+size = Vector2(70, 36)
+
+[node name="Door" type="StaticBody2D"]
+script = ExtResource("1_bo0r8")
+
+[node name="CloseDoor" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_368cs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 53)
+shape = SubResource("RectangleShape2D_qwr0r")
+
+[node name="Trigger" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger"]
+position = Vector2(1, 55)
+shape = SubResource("RectangleShape2D_qew5d")
+
+[node name="OpenDoor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-9, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_eo1wc")
+
+[connection signal="body_entered" from="Trigger" to="." method="_on_trigger_body_entered"]
