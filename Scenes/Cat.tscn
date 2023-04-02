@@ -5,16 +5,16 @@
 [ext_resource type="SpriteFrames" uid="uid://rqopevoiabds" path="res://Props/CatAnim.tres" id="3_18uc0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ifwqn"]
-size = Vector2(51, 24)
+size = Vector2(51, 36)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jjbcb"]
 size = Vector2(52, 60)
 
-[node name="BasePlayer" instance=ExtResource("1_cbujr")]
+[node name="Cat" instance=ExtResource("1_cbujr")]
 script = ExtResource("1_h4ja7")
 
 [node name="Collider" parent="." index="0"]
-position = Vector2(7.5, 27)
+position = Vector2(7.5, 21)
 shape = SubResource("RectangleShape2D_ifwqn")
 
 [node name="Sprite" parent="." index="1"]
@@ -25,12 +25,14 @@ frame = 1
 frame_progress = 0.10183
 
 [node name="area1" type="Area2D" parent="." index="2"]
+visible = false
 
 [node name="Collider" type="CollisionShape2D" parent="area1" index="0"]
 position = Vector2(7.5, 27)
 shape = SubResource("RectangleShape2D_ifwqn")
 
 [node name="area2" type="Area2D" parent="." index="3"]
+visible = false
 
 [node name="Collider" type="CollisionShape2D" parent="area2" index="0"]
 position = Vector2(7, -15)

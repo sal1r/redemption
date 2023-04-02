@@ -11,6 +11,7 @@ font = ExtResource("5_vg4dc")
 font_size = 64
 
 [node name="Game" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_kjom4")
 
 [node name="TileMap" type="TileMap" parent="."]

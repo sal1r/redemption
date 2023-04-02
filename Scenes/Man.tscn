@@ -5,7 +5,7 @@
 [ext_resource type="SpriteFrames" uid="uid://bmlqsgvia87pd" path="res://Props/ManAnim.tres" id="3_5yple"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi4sl"]
-size = Vector2(60, 18)
+size = Vector2(60, 69)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7raxb"]
 size = Vector2(62, 153)
@@ -14,23 +14,25 @@ size = Vector2(62, 153)
 script = ExtResource("1_e8s4s")
 
 [node name="Collider" parent="." index="0"]
-position = Vector2(4, 87)
+position = Vector2(4, 61.5)
 shape = SubResource("RectangleShape2D_gi4sl")
 
 [node name="Sprite" parent="." index="1"]
-y_sort_enabled = true
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("3_5yple")
 animation = &"Walk"
-frame_progress = 0.319444
+frame = 1
+frame_progress = 0.247389
 
 [node name="area1" type="Area2D" parent="." index="2"]
+visible = false
 
 [node name="Collider" type="CollisionShape2D" parent="area1" index="0"]
 position = Vector2(4, 87)
 shape = SubResource("RectangleShape2D_gi4sl")
 
 [node name="area2" type="Area2D" parent="." index="3"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area2" index="0"]
 position = Vector2(3, 1.5)

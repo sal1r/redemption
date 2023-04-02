@@ -2,9 +2,10 @@ extends Player
 
 func _physics_process(delta):
 	if !game.target:
-		self.walk()
-		if self.direction:
+		walk()
+		if direction:
 			anim.play("Walk")
+			anim.flip_h = true if direction.x < 0 else false
 		else:
 			anim.play("idle")
 		move_and_slide()

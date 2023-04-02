@@ -5,17 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ak4cy"]
 [ext_resource type="Texture2D" uid="uid://bjyhod38hsrix" path="res://Sprites/CatIdle.png" id="4_fvsvl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2bn3h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_grbmv"]
 atlas = ExtResource("3_ak4cy")
-region = Rect2(32, 0, 32, 64)
+region = Rect2(64, 0, 32, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0m58"]
 atlas = ExtResource("3_ak4cy")
 region = Rect2(0, 0, 32, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_grbmv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bn3h"]
 atlas = ExtResource("3_ak4cy")
-region = Rect2(64, 0, 32, 64)
+region = Rect2(32, 0, 32, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p8g10"]
 atlas = ExtResource("3_ak4cy")
@@ -42,13 +42,17 @@ _data = {
 "idle": SubResource("Animation_d7j8x")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rxmbh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3307j"]
 atlas = ExtResource("4_fvsvl")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ngrur"]
 atlas = ExtResource("4_fvsvl")
 region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxmbh"]
+atlas = ExtResource("4_fvsvl")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0n31f"]
 atlas = ExtResource("4_fvsvl")
@@ -61,10 +65,6 @@ region = Rect2(96, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_rvc24"]
 atlas = ExtResource("4_fvsvl")
 region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3307j"]
-atlas = ExtResource("4_fvsvl")
-region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jj7g"]
 atlas = ExtResource("4_fvsvl")
@@ -151,7 +151,7 @@ offset_bottom = -312.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(5, 5)
-texture = SubResource("AtlasTexture_2bn3h")
+texture = SubResource("AtlasTexture_grbmv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Man"]
 autoplay = "idle"
@@ -173,7 +173,7 @@ offset_bottom = -172.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(5, 5)
-texture = SubResource("AtlasTexture_rxmbh")
+texture = SubResource("AtlasTexture_3307j")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
 autoplay = "idle"
