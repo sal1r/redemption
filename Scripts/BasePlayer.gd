@@ -3,7 +3,9 @@ class_name Player
 
 @onready var anim = $Sprite
 @onready var game = get_node("/root/Game")
-@onready var items = get_node("/root/Game/Canvas/UI/Items")
+@onready var item_image = get_node("/root/Game/Canvas/UI/Item")
+const key = preload("res://Sprites/Key.png")
+const coin = preload("res://Sprites/Chest.png")
 @onready var item = GameManager.res.NONE
 var speed = 500
 var direction = Vector2.ZERO
@@ -17,9 +19,8 @@ func set_item(i):
 	item = i
 	match item:
 		GameManager.res.KEY:
-			items.text = "Интвентарь: ключ"
+			item_image.texture = key
 		GameManager.res.COIN:
-			items.text = "Интвентарь: монета"
+			item_image.texture = coin
 		GameManager.res.NONE:
-			print("пуст")
-			items.text = "Интвентарь пуст"
+			item_image.texture = null

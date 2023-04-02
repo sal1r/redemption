@@ -5,7 +5,7 @@ extends Control
 @onready var dialog_text = $Center/Dialog/Text
 @onready var start_dialog = $StartDialog
 @onready var start_dialog_text = $StartDialog/Center/Text
-@onready var items = $Items
+@onready var item = $Item
 var transition = true
 var transition_stage = 0
 var fade = false

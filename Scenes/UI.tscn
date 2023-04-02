@@ -1,11 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b855wluvkjw0"]
+[gd_scene load_steps=4 format=3 uid="uid://b855wluvkjw0"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_h6e0f"]
 [ext_resource type="Script" path="res://Scripts/UI.gd" id="2_fcbud"]
 [ext_resource type="Texture2D" uid="uid://brfaf1yt6a6yj" path="res://DialogPanel.png" id="3_vcpas"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_jsket"]
-font_size = 24
 
 [node name="UI" type="Control"]
 process_mode = 3
@@ -18,14 +15,13 @@ grow_vertical = 2
 theme = ExtResource("1_h6e0f")
 script = ExtResource("2_fcbud")
 
-[node name="Items" type="Label" parent="."]
+[node name="Item" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
-offset_right = 309.0
-offset_bottom = 52.0
-text = "Инвентарь пуст"
-label_settings = SubResource("LabelSettings_jsket")
+offset_right = 60.0
+offset_bottom = 100.0
+expand_mode = 5
 
 [node name="Center" type="CenterContainer" parent="."]
 layout_mode = 1
