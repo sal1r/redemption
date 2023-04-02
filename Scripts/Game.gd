@@ -1,7 +1,5 @@
 extends Node2D
 
-enum {NONE, KEY, COIN}
-
 @onready var camera = $MainCamera
 @onready var man = $Man
 @onready var cat = $Cat

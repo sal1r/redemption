@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=11 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
 [ext_resource type="PackedScene" uid="uid://cbwwkmwbtikhn" path="res://Scenes/Man.tscn" id="2_i0hag"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b0accu12cbn44" path="res://Scenes/Cat.tscn" id="3_mq3mr"]
 [ext_resource type="PackedScene" uid="uid://b855wluvkjw0" path="res://Scenes/UI.tscn" id="4_aq1oa"]
 [ext_resource type="Texture2D" uid="uid://sju02m86pixm" path="res://Sprites/GameLava.png" id="6_idle1"]
+[ext_resource type="PackedScene" uid="uid://cj4kriatu86xp" path="res://Scenes/Chest.tscn" id="7_nlwhd"]
 
 [sub_resource type="Gradient" id="Gradient_q41lg"]
 colors = PackedColorArray(0.101961, 0.101961, 0.101961, 0.784314, 0.2, 0.2, 0.2, 0.588235)
@@ -86,6 +87,7 @@ motion_mirroring = Vector2(1920, 1080)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_repeat = 2
+position = Vector2(-7, -26)
 scale = Vector2(5, 5)
 texture = ExtResource("6_idle1")
 
@@ -106,3 +108,7 @@ texture_repeat = 2
 position = Vector2(1920, 0)
 scale = Vector2(5, 5)
 texture = ExtResource("6_idle1")
+
+[node name="Chest" parent="." instance=ExtResource("7_nlwhd")]
+position = Vector2(-498, 114)
+item = 1

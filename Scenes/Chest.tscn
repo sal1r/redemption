@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cj4kriatu86xp"]
+
+[ext_resource type="Texture2D" uid="uid://ces3fygx7k3b4" path="res://Sprites/Chest.png" id="1_15x3g"]
+[ext_resource type="Script" path="res://Scripts/Chest.gd" id="1_fm53e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3hrg"]
+size = Vector2(32, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_03q4o"]
+size = Vector2(50, 50)
+
+[node name="Chest" type="StaticBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_fm53e")
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_a3hrg")
+
+[node name="Trigger" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="Trigger"]
+shape = SubResource("RectangleShape2D_03q4o")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_15x3g")
+
+[connection signal="body_entered" from="Trigger" to="." method="_on_trigger_body_entered"]
+[connection signal="body_exited" from="Trigger" to="." method="_on_trigger_body_exited"]

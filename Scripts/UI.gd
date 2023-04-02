@@ -5,6 +5,7 @@ extends Control
 @onready var dialog_text = $Center/Dialog/Text
 @onready var start_dialog = $StartDialog
 @onready var start_dialog_text = $StartDialog/Center/Text
+@onready var items = $Items
 var transition = true
 var transition_stage = 0
 var fade = false
@@ -12,11 +13,11 @@ var fade_stage = 1
 
 func show_dialog(text):
 	dialog.visible = true
-	dialog_text = text
+	dialog_text.text = text
 
 func hide_dialog():
 	dialog.visible = false
-	dialog_text = ""
+	dialog_text.text = ""
 
 func _on_continue_pressed():
 	pause_menu.visible = false

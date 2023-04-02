@@ -1,5 +1,7 @@
 extends Node
 
+enum res {NONE, KEY, COIN}
+
 # Сделать табличку "Вы точно хоитите выйти"
 # через set_auto_accept_quit() и ловлю событий
 
