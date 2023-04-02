@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://mcns7vmyj2u3"]
+[gd_scene load_steps=21 format=3 uid="uid://mcns7vmyj2u3"]
 
 [ext_resource type="Theme" uid="uid://55h40ru4icdw" path="res://Props/Theme.tres" id="1_227q4"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_hwbt6"]
+[ext_resource type="Texture2D" uid="uid://mil6s62og1ak" path="res://Sprites/Lava.png" id="3_7p6km"]
 [ext_resource type="Texture2D" uid="uid://bicrscyh16sg4" path="res://Sprites/ManIdle.png" id="3_ak4cy"]
 [ext_resource type="Texture2D" uid="uid://bjyhod38hsrix" path="res://Sprites/CatIdle.png" id="4_fvsvl"]
 
@@ -101,6 +102,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_227q4")
 script = ExtResource("2_hwbt6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.8, 0.8, 0.8, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7p6km")
 
 [node name="Buttons" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -249,6 +260,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.588235)
 
 [node name="Center" type="CenterContainer" parent="Controls"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

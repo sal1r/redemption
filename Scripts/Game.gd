@@ -3,8 +3,8 @@ extends Node2D
 enum {NONE, KEY, COIN}
 
 @onready var camera = $MainCamera
-@onready var man = $PlayersSort/Man
-@onready var cat = $PlayersSort/Cat
+@onready var man = $Man
+@onready var cat = $Cat
 var target = false
 
 func _ready():

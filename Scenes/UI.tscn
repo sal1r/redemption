@@ -106,6 +106,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Text" type="RichTextLabel" parent="StartDialog/Center"]
+modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(900, 500)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 24
