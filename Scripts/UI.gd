@@ -5,11 +5,17 @@ extends Control
 @onready var dialog_text = $Center/Dialog/Text
 @onready var start_dialog = $StartDialog
 @onready var start_dialog_text = $StartDialog/Center/Text
+@onready var end_dialog = $EndDialog
+@onready var end_dialog_text = $EndDialog/Center/Text
 @onready var item = $Item
 var transition = true
 var transition_stage = 0
 var fade = false
 var fade_stage = 1
+var end_transition = false
+var end_transition_stage = 0
+var end_text_transition = false
+var end_text_transition_stage = 0
 
 func show_dialog(text):
 	dialog.visible = true
@@ -36,6 +42,19 @@ func _physics_process(delta):
 		if fade_stage <= 0:
 			fade = false
 			start_dialog.visible
+	
+	if end_transition:
+		end_transition_stage += 0.02
+		end_dialog_text.modulate.a = end_transition_stage
+		if end_transition_stage >= 1:
+			end_transition = false
+	
+	if end_text_transition:
+		end_text_transition_stage += 0.02
+		end_dialog_text.modulate.a = end_text_transition_stage
+		if end_text_transition_stage >= 1.5:
+			end_text_transition = false
+			end_text_transition = true
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
@@ -44,6 +63,8 @@ func _input(event):
 	
 	if event.is_action_pressed("enter"):
 		fade = true
+		if end_transition_stage >= 1:
+			GameManager.load_menu()
 
 func _on_menu_pressed():
 	get_tree().paused = false

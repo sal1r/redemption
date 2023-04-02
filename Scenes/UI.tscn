@@ -131,6 +131,41 @@ text = "[center]Вот твоя жизнь и закончилась.
 
 [font_size=12]  для продолжения нажмите Enter[/font_size]"
 
+[node name="EndDialog" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Center" type="CenterContainer" parent="EndDialog"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="RichTextLabel" parent="EndDialog/Center"]
+modulate = Color(0, 0, 0, 0)
+custom_minimum_size = Vector2(900, 500)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[center]Вот твоя жизнь и закончилась.
+Прожил ли ты её так, как тебе хотелось?
+Впрочем, неважно.
+Сказки про рай и ад, кстати, оказались правдой.
+И как думаешь, куда ты попадешь?
+Ты не совершил тяжкого греха, однако, всю жизнь оставался один. За всю свою скучную жизнь, ты ни разу искренне не сочувствовал никакому живому существу, что уж говорить о любви.
+Добро пожаловать в Чистилище, искупи свою вину.[/center]
+
+
+
+[font_size=12]  для перехода в меню нажмите Enter[/font_size]"
+
 [connection signal="pressed" from="Pause/Buttons/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Pause/Buttons/Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="Pause/Buttons/Exit" to="." method="_on_exit_pressed"]
