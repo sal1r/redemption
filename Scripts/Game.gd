@@ -7,6 +7,9 @@ enum {NONE, KEY, COIN}
 @onready var cat = $PlayersSort/Cat
 var target = false
 
+func _ready():
+	GameManager.play_music()
+
 func _physics_process(delta):
 	if !target:
 		camera.position.x = man.position.x

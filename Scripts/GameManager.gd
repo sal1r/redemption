@@ -11,5 +11,8 @@ func load_menu(): # Переписать на загрузку в фоне пр�
 #                    юзать change_scene_to_packed()
 	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
+func play_music():
+	Music.play()
+
 func exit():
 	get_tree().quit()

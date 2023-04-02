@@ -4,4 +4,4 @@
 
 [node name="Music" type="AudioStreamPlayer"]
 stream = ExtResource("1_ivttp")
-bus = &"Music"
+volume_db = -6.0
