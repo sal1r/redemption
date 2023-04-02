@@ -41,7 +41,7 @@ func _physics_process(delta):
 		start_dialog.modulate.a = fade_stage
 		if fade_stage <= 0:
 			fade = false
-			start_dialog.visible
+			start_dialog.visible = false
 	
 	if end_transition:
 		end_transition_stage += 0.02
