@@ -208,6 +208,6 @@ position = Vector2(86, -1435)
 item = 1
 
 [node name="PreEndTrigger" parent="." instance=ExtResource("11_7tp5r")]
-position = Vector2(-37, -2174)
+position = Vector2(-34, -2196)
 
 [editable path="EndTrigger"]
