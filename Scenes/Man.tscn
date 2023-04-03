@@ -20,4 +20,4 @@ shape = SubResource("RectangleShape2D_gi4sl")
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("3_5yple")
 animation = &"Walk"
-frame_progress = 0.419786
+frame_progress = 0.263285

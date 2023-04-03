@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="redemption"
+config/name="Redemtion"
 run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [audio]
 
