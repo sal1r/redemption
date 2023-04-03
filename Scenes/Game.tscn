@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dhh2chtk0bsj2"]
+[gd_scene load_steps=19 format=3 uid="uid://dhh2chtk0bsj2"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kjom4"]
 [ext_resource type="PackedScene" uid="uid://cbwwkmwbtikhn" path="res://Scenes/Man.tscn" id="2_i0hag"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bk3bdmwu6v6fa" path="res://Scenes/Door.tscn" id="8_54f2t"]
 [ext_resource type="PackedScene" uid="uid://bewy1lc8dssq6" path="res://Scenes/ParadiseDoor.tscn" id="9_gwwpe"]
 [ext_resource type="PackedScene" uid="uid://p6n32l3o3sw6" path="res://Scenes/EndTrigger.tscn" id="10_wx7ac"]
+[ext_resource type="PackedScene" uid="uid://bb3stxyksdped" path="res://Scenes/PreEndTrigger.tscn" id="11_7tp5r"]
 
 [sub_resource type="Gradient" id="Gradient_anwmh"]
 offsets = PackedFloat32Array(0, 0.683871)
@@ -82,7 +83,7 @@ drag_left_margin = 0.3
 drag_right_margin = 0.3
 editor_draw_drag_margin = true
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="MainCamera"]
+[node name="Particles" type="GPUParticles2D" parent="MainCamera"]
 amount = 25
 process_material = SubResource("ParticleProcessMaterial_plppd")
 lifetime = 10.0
@@ -109,29 +110,29 @@ color = Color(0, 0, 0, 0.0980392)
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+[node name="Parallax" type="ParallaxLayer" parent="Background"]
 modulate = Color(0.6, 0.6, 0.6, 1)
 motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(1920, 1080)
 
-[node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Parallax"]
 texture_repeat = 2
 scale = Vector2(5, 5)
 texture = ExtResource("6_idle1")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Background/ParallaxLayer"]
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Parallax"]
 texture_repeat = 2
 position = Vector2(0, 1080)
 scale = Vector2(5, 5)
 texture = ExtResource("6_idle1")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Background/ParallaxLayer"]
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Parallax"]
 texture_repeat = 2
 position = Vector2(1920, 1080)
 scale = Vector2(5, 5)
 texture = ExtResource("6_idle1")
 
-[node name="Sprite2D4" type="Sprite2D" parent="Background/ParallaxLayer"]
+[node name="Sprite2D4" type="Sprite2D" parent="Background/Parallax"]
 texture_repeat = 2
 position = Vector2(1920, 0)
 scale = Vector2(5, 5)
@@ -205,5 +206,8 @@ position = Vector2(33, -13.75)
 [node name="Chest5" parent="." instance=ExtResource("7_nlwhd")]
 position = Vector2(86, -1435)
 item = 1
+
+[node name="PreEndTrigger" parent="." instance=ExtResource("11_7tp5r")]
+position = Vector2(-37, -2174)
 
 [editable path="EndTrigger"]
