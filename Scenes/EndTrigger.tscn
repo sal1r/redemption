@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/EndTrigger.gd" id="1_t57j8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xg0wo"]
-size = Vector2(100, 100)
+size = Vector2(639, 341.5)
 
 [node name="EndTrigger" type="Area2D"]
 script = ExtResource("1_t57j8")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bewy1lc8dssq6"]
+
+[ext_resource type="PackedScene" uid="uid://bk3bdmwu6v6fa" path="res://Scenes/Door.tscn" id="1_5dd5a"]
+[ext_resource type="Texture2D" uid="uid://bvf6o2l5a7ow7" path="res://Sprites/ParadiseDorOpened.png" id="3_fcgyk"]
+[ext_resource type="Texture2D" uid="uid://dapggatsnhamq" path="res://Sprites/ParadiseDor.png" id="4_xnrrq"]
+
+[node name="Door" instance=ExtResource("1_5dd5a")]
+
+[node name="OpenDoor" parent="." index="2"]
+texture = ExtResource("3_fcgyk")
+
+[node name="CloseDoor" parent="." index="3"]
+texture = ExtResource("4_xnrrq")

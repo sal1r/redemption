@@ -44,7 +44,7 @@ func _physics_process(delta):
 			start_dialog.visible = false
 	
 	if end_transition:
-		end_transition_stage += 0.02
+		end_transition_stage += 0.01
 		end_dialog.modulate.a = end_transition_stage
 		if end_transition_stage >= 1:
 			end_transition = false
@@ -53,7 +53,7 @@ func _physics_process(delta):
 	if end_text_transition:
 		end_text_transition_stage += 0.02
 		end_dialog_text.modulate.a = end_text_transition_stage
-		if end_text_transition_stage >= 1.5:
+		if end_text_transition_stage >= 1:
 			end_text_transition = false
 
 func _input(event):
